@@ -1,4 +1,4 @@
-let num = 234;
+let num = 445;
 function ejemplo(params) {
     let inp = document.querySelector("#entrada");
     let p = document.querySelector("#salida");
@@ -9,4 +9,6 @@ function ejemplo(params) {
     console.log(p.value);
     console.log(valor);
     console.dir(inp);
+    let r = num - "45";
+    console.log(r);
 }
