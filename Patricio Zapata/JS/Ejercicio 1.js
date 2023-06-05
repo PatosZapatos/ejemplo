@@ -33,27 +33,39 @@ function Ejercicio3() {
 
     var numero1 = 5;
     var numero2 = 8;
-    if (numero1 < numero2) {
+    if (numero1 <= numero2) {
         console.log("numero1 no es mayor que numero2");
     }
     if (numero2 > 0) {
         console.log("numero2 es positivo");
     }
-    if (numero1 < 0 || numero1 != 0) {
+    if (numero1 < 0 || numero1 > 0) {
         console.log("numero1 es negativo o distinto de cero");
     }
-    numero1 = numero1 + 1;
-    if (numero2 > numero1) {
+    if (numero1 < numero2 - 1) {
         console.log("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
     }
 }
 
 
 
-function Ejercicio4(params) {
+function Ejercicio4() {
     var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K',
         'E', 'T'];
 
-    var dni = document.querySelector("#entrada").value;
+    var dni = document.querySelector("#dni").value;
+    var letraUsuario = document.querySelector("#letra").value;
+    var letraUsuarioMayuscula = letraUsuario.toUpperCase();
+
+    if (dni > 0 && dni < 99999999) {
+        var posicion = dni % 23;
+        if (letras[posicion] == letraUsuarioMayuscula) {
+            console.log("El número DNI y la letra son correctos");
+        } else {
+            console.log("La letra que ha indicado no es correcta");
+        }
+    } else {
+        console.log("El número proporcionado no es válido");
+    }
 
 }
