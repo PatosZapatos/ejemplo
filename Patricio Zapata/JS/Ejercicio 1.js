@@ -58,8 +58,8 @@ function Ejercicio4() {
     var letraUsuarioMayuscula = letraUsuario.toUpperCase();
 
     if (dni > 0 && dni < 99999999) {
-        var posicion = dni % 23;
-        if (letras[posicion] == letraUsuarioMayuscula) {
+        var posi = dni % 23;
+        if (letras[posi] == letraUsuarioMayuscula) {
             console.log("El número DNI y la letra son correctos");
         } else {
             console.log("La letra que ha indicado no es correcta");
@@ -68,4 +68,15 @@ function Ejercicio4() {
         console.log("El número proporcionado no es válido");
     }
 
+}
+
+
+function Ejercicio5() {
+    var num = document.querySelector("#num").value;
+    var valorGuardado = 1;
+
+    for (i = 1; i <= num; i++) {
+        var valorGuardado = valorGuardado * i;
+    }
+    console.log("El resultado es " + valorGuardado);
 }
