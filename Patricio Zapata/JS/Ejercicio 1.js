@@ -84,10 +84,10 @@ function Ejercicio5() {
 
 function Ejercicio6() {
     var num = prompt("Introduce un número entero");
-    if(num % 2 == 0){
+    if (num % 2 == 0) {
         document.write("<br>El número es par.");
     }
-    else{
+    else {
         document.write("<br>El número es impar.");
     }
 }
@@ -95,13 +95,30 @@ function Ejercicio6() {
 function Ejercicio7() {
     var text = document.querySelector("#text").value;
 
-    if(text == text.toUpperCase()){
+    if (text == text.toUpperCase()) {
         console.log("El texto está en mayúscula.");
     }
-    else if (text == text.toLowerCase()){
+    else if (text == text.toLowerCase()) {
         console.log("El texto está en minúscula.");
     }
-    else{
+    else {
         console.log("El texto es mixto.")
     }
+}
+
+function Ejercicio8() {
+    var frase = prompt("Introduzca una frase para saber si es palindromo")
+    var fraseSimple = frase.split(" ").join("").toLowerCase();
+    const fraseReversa = fraseSimple.split("").reverse().join("");
+
+    if (fraseSimple == fraseReversa) {
+        console.log("La frase es palindromo.");
+    }
+    else {
+        console.log("La frase no es palidromo.")
+    }
+}
+
+function Ejercicio9() {
+    
 }
