@@ -80,3 +80,28 @@ function Ejercicio5() {
     }
     console.log("El resultado es " + valorGuardado);
 }
+
+
+function Ejercicio6() {
+    var num = prompt("Introduce un número entero");
+    if(num % 2 == 0){
+        document.write("<br>El número es par.");
+    }
+    else{
+        document.write("<br>El número es impar.");
+    }
+}
+
+function Ejercicio7() {
+    var text = document.querySelector("#text").value;
+
+    if(text == text.toUpperCase()){
+        console.log("El texto está en mayúscula.");
+    }
+    else if (text == text.toLowerCase()){
+        console.log("El texto está en minúscula.");
+    }
+    else{
+        console.log("El texto es mixto.")
+    }
+}
