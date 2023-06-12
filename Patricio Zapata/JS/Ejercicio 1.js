@@ -131,7 +131,7 @@ function Ejercicio9() {
     }
 
     function Estudiante(nombre, edad, genero, curso, grupo) {
-        Persona.call(this, nombre, edad, genero)
+        Persona.call(this, nombre, edad, genero);
         this.curso = curso;
         this.grupo = grupo;
     }
